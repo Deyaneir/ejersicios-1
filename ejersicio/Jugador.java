@@ -4,10 +4,12 @@ public class Jugador {
     String avatar;
     int edad;
     String pais;
-    public Jugador(String avatar, int edad, String pais){
+    int s;
+    public Jugador(String avatar, int edad, String pais, int s){
         this.avatar=avatar;
         this.edad=edad;
         this.pais=pais;
+        this.s=s;
     }
     public Jugador(){
         this.avatar="Juegagerman";
@@ -21,6 +23,7 @@ public class Jugador {
         System.out.println("El gamer: "+avatar+" de edad: "+edad+" que nacio en el pais de "+pais+ " va a correr");
     }
     public  void saltar(){
-        System.out.println("El gamer: "+avatar+" de edad: "+edad+" que nacio en el pais de "+pais+ " va a saltar");
+        int saltos=s+2;
+        System.out.println("El gamer: "+avatar+" de edad: "+edad+" que nacio en el pais de "+pais+ " va a saltar"+saltos);
     }
 }
